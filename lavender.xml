@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+    <remote name="vendor"
+            fetch="https://github.com"
+            revision="twelve" />
+	
+    <remote name="device"
+            fetch="https://github.com"
+            revision="lineage-19.1"/>
+
+    <remote name="kernel"
+            fetch="https://github.com"
+            revision="oldcam-hmp"/>
+
+    <!--Device Trees-->
+    <project path="device/xiaomi/lavender" name="xiaomi-lavender/android_device_xiaomi_lavender" remote="device" />
+    <project path="device/xiaomi/sdm660-common" name="xiaomi-lavender/android_device_xiaomi_sdm660-common" remote="device" />
+
+
+    <!--Kernel-->
+    <project path="kernel/xiaomi/lavender" name="xiaomi-lavender/kernel_xiaomi_lavender" remote="kernel" />
+
+
+    <!-- Vendor folders -->
+    <project path="vendor/xiaomi/lavender" name="xiaomi-lavender/vendor_xiaomi_lavender" remote="vendor" />
+    <project path="vendor/xiaomi/sdm660-common" name="xiaomi-lavender/android_vendor_xiaomi_sdm660-common" remote="vendor" />
+</manifest>
